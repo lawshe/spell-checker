@@ -35,7 +35,6 @@ class TextInput extends React.Component {
 
     return (
       <div className="card"><div className="card-content">
-        <span className="card-title">Spell Checked</span>
         <div className={glob.output_text}>{outputText()}</div>
       </div></div>
     );

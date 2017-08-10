@@ -55,6 +55,7 @@ h1{
 }
 
 h2{
+  font-size: 2rem;
   margin: $marginSM 0 0 0;
 }
 
@@ -155,6 +156,9 @@ a:not(.btn){
 .dark_bg{
   h1, p{
     color: $white;
+  }
+  h2{
+    color: $grayLight;
   }
 
   a:not(.btn){

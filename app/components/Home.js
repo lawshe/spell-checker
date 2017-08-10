@@ -37,6 +37,14 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+        <div className={`row container ${glob.dark_bg}`}>
+          <div className="col s6">
+            <h2>Text Input</h2>
+          </div>
+          <div className="col s6">
+            <h2>Spell Checked</h2>
+          </div>
+        </div>
         <div className={`row container`}>
           <div className="col s6">
             <TextInput />
