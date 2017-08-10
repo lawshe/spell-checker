@@ -1,7 +1,9 @@
 import accessibilityReducers from './accessibilityReducers';
+import spellingReducers from './spellingReducers';
 
 const reducers = {
-  accessibility: accessibilityReducers
+  accessibility: accessibilityReducers,
+  spelling: spellingReducers
 };
 
 export default reducers;
