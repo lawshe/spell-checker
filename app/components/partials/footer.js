@@ -7,7 +7,9 @@ export default () => {
       <div className="container">
         <div className="row">
           <div className="col l6 s12">
-            <h5 className="grey-text text-lighten-4">Footer</h5>
+            <h5 className="grey-text text-lighten-4">
+              Spell checker using <a href="http://ogden.basic-english.org/words.html" target="_BLANK" rel="noopener">BASIC English</a>.
+            </h5>
           </div>
         </div>
       </div>
