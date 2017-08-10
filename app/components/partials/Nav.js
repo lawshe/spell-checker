@@ -30,7 +30,7 @@ class Nav extends React.Component {
         <div className="nav-wrapper">
           <div className="container">
             <Link to="/" className="brand-logo">
-              Logo
+              Spell Checker
             </Link>
           </div>
 

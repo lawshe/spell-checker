@@ -18,7 +18,7 @@ class Intro extends React.Component {
             <br /><br />
             <div className="row center">
               <h1 className="header grey-text text-lighten-5" style={{ marginBottom: 0 }}>
-                Header
+                Spell Checker
               </h1>
             </div>
           </div>
