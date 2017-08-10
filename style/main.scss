@@ -10,6 +10,7 @@ $greenDarken4: #1B5E20;
 $greenVeryLight: #bddebf;
 $greenVeryDark: #0F5113;
 $greenDark: #689f38;
+$red: #ffcdd2; 
 $white: #fafafa;
 $btnHover : $greenDark;
 $linkColor: $blueLight;
@@ -186,6 +187,10 @@ label{
       color: $blueVeryLight!important;
     }
   }
+}
+
+.misspelled{
+  background-color: $red;
 }
 
 nav {
