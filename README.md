@@ -1,15 +1,7 @@
-# React Comienzo
-A starter app using:
-- [Express](http://expressjs.com/)
-- [Jest](https://facebook.github.io/jest/)
-- [Materialize](http://materializecss.com/)
-- [Node](https://nodejs.org/en/)
-- [React](https://facebook.github.io/react/)
-- [Redux](http://redux.js.org/)
+# Spell Checker
+An app to spell check using [BASIC English](http://ogden.basic-english.org/basiceng.html).
 
-The app has 2 routes: `/` and `/accessibility`. The homepage includes a [parallax](https://en.wikipedia.org/wiki/Parallax), which can be disabled by the user in `/accessibility`.
-
-A [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) is included, but in order to use you must include an SSL certificate. Free certificates are available at [Let's Encrypt](https://letsencrypt.org/). Store `key.pem` and `cert.pem` in root.
+Currently, using 850 basic words and plural variations of things.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -21,8 +13,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 Clone the repository
 ```
-$ git clone https://github.com/lawshe/react-comienzo.git
-$ cd react-comienzo
+$ git clone https://github.com/lawshe/spell-checker.git
+$ cd spell-checker
 $ npm install
 ```
 
@@ -48,8 +40,9 @@ Running in production
 $ npm start
 ```
 
-### Customizing
-Favicon and icons are stored in `/public/images/icons`. Google analytics can be added in `/config-variables.js`.
-
 ## To Do
+- Handle other grammer rules: change verbs into adjectives, change verbs into nouns, change adjectives into adverbs, -un prefix, combined words
 - Add tests for components
+- Remove HTML from input
+- Handle new lines in <textarea> input
+- Update Jest to handle Webpack alias
