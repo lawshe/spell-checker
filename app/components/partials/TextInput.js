@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { updateText } from '../../actions/actionCreators'
+import { updateText } from '../../actions/actionCreators';
 import glob from 'style';
 
 /**
