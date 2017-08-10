@@ -48,6 +48,7 @@ $ npm start
 - Update Jest to handle Webpack alias
 - Add clear button
 - Add hover to `.brand-logo`
+- Add message explaining that highlighted words in "Spell Checked" were not found in Basic English
 
 ## Possible Updates
 - Consolidate text input/output into 1 view, perhaps using a WYSIWYG
