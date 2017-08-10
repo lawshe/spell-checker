@@ -103,13 +103,9 @@ a:not(.btn){
 .brand_logo {
   display: inline-block;
   height: 100%;
-  svg{
-    margin-top: 7px;
-    height: 54px;
-    @media only screen and (max-width: $screenMobile) {
-      margin-top: 5px;
-      height: 47px;
-    }
+  img{
+    height: 70%;
+    margin-top: 15%;
   }
 }
 

@@ -47,6 +47,7 @@ $ npm start
 - Handle new lines in <textarea> input
 - Update Jest to handle Webpack alias
 - Add clear button
+- Add hover to `.brand-logo`
 
 ## Possible Updates
 - Consolidate text input/output into 1 view, perhaps using a WYSIWYG
