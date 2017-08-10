@@ -24,8 +24,8 @@ class Intro extends React.Component {
         </div>
         <picture className={`parallax valign-wrapper ${glob.parallax}`}>
           <source srcSet="/public/images/bg/abstract.webp" type="image/webp" style={{display: 'block', transform: 'translate3d(-50%, 0px, 0px)'}} />
-          <source srcSet="/public/images/bg/abstract.jpg" type="image/jpg" style={{display: 'block', transform: 'translate3d(-50%, 0px, 0px)'}} />
-          <img src="/public/images/bg/abstract.jpg" alt="Parallax background" style={{display: 'block', transform: 'translate3d(-50%, 0px, 0px)'}} />
+          <source srcSet="/public/images/bg/abstract.png" type="image/jpg" style={{display: 'block', transform: 'translate3d(-50%, 0px, 0px)'}} />
+          <img src="/public/images/bg/abstract.png" alt="Parallax background" style={{display: 'block', transform: 'translate3d(-50%, 0px, 0px)'}} />
         </picture>
       </div>
     )
