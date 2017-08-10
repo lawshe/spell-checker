@@ -29,9 +29,7 @@ class TextInput extends React.Component {
 
   handleTextChange() {
     const textValue = document.getElementById('textarea1').value;
-    if (textValue) {
-      this.props.onTextChange(textValue);
-    }
+    this.props.onTextChange(textValue);
   }
 
   render() {
