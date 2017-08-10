@@ -1,7 +1,7 @@
 {
-  "name": "react-comienzo",
+  "name": "spell-checker",
   "display": "standalone",
-  "short_name": "React Comienzo",
+  "short_name": "Spell Check",
   "background_color": "#1b5e20",
   "icons": [
     {
