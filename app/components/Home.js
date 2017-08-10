@@ -28,7 +28,16 @@ class Home extends React.Component {
     return (
       <div>
         <Intro parallax={this.props.parallax} />
-        <div className={`row container ${glob.pad_lg}`}>
+        <div className="section">
+          <div className="container">
+            <div className={`row center ${glob.no_margin} ${glob.dark_bg}`}>
+              <p style={{ marginBottom: 0 }}>
+                Check your spelling using the 850 words in <a href="http://ogden.basic-english.org/words.html" target="_BLANK"  rel="noopener">BASIC English</a> + plural variations of things.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className={`row container`}>
           <div className="col s6">
             <TextInput />
           </div>
