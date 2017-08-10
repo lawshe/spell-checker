@@ -39,6 +39,7 @@ class TextInput extends React.Component {
       <div className="card"><div className="card-content">
         <span className="card-title">Text Input</span>
         <textarea className="materialize-textarea" id="textarea1" onChange={() => this.handleTextChange()}>{this.props.input_text}</textarea>
+        <label for="textarea1">Textarea</label>
       </div></div>
     );
   }
