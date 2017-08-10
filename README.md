@@ -46,3 +46,4 @@ $ npm start
 - Remove HTML from input
 - Handle new lines in <textarea> input
 - Update Jest to handle Webpack alias
+- Add clear button
