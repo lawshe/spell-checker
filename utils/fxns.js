@@ -17,7 +17,7 @@ const wordsToObj = (arr) => {
 }
 
 const makeArray = (str) => {
-  return str ? str.match(/\w+/g) : [];
+  return str ? str.split(' ') : [];
 }
 
 const spellCheck = (str) => {
@@ -28,6 +28,7 @@ const spellCheck = (str) => {
     var wordsObj = wordsToObj(strArr);
     // Object keys are words from user input
     for (var word in wordsObj) {
+      word = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
       if(allBasicWords.indexOf(word) === -1) {
         // check if plural thing
         if (word.slice(-1) === 's' && basic.things.indexOf(word.slice(0, -1)) !== -1) {
