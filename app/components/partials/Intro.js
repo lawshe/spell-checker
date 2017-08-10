@@ -15,8 +15,7 @@ class Intro extends React.Component {
       <div className={`parallax-container valign-wrapper ${glob.parallax_container}`}>
         <div className="section" style={{width: '100%', zIndex: 1}}>
           <div className="container">
-            <br /><br />
-            <div className="row center">
+            <div className={`row center ${glob.no_margin}`}>
               <h1 className="header grey-text text-lighten-5" style={{ marginBottom: 0 }}>
                 Spell Checker
               </h1>

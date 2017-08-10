@@ -248,8 +248,11 @@ nav {
 
 .parallax_container{
   height: auto!important;
-  min-height: 34vh;
+  min-height: 25vh;
   width: 100%;
+  h1 {
+    margin-top: 0;
+  }
 }
 
 .shadow{
