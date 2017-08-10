@@ -10,7 +10,7 @@ $greenDarken4: #1B5E20;
 $greenVeryLight: #bddebf;
 $greenVeryDark: #0F5113;
 $greenDark: #689f38;
-$red: #ffcdd2; 
+$red: #ffcdd2;
 $white: #fafafa;
 $btnHover : $greenDark;
 $linkColor: $blueLight;
@@ -224,6 +224,15 @@ nav {
 .no_pad{
   padding: 0;
 }
+
+.output_text, textarea{
+  font-size: 13px!important;
+  line-height: 15px!important;
+  margin: 0!important;
+  min-height: 3rem!important;
+  padding: 0!important;
+}
+
 
 .pad_lg{
   padding: $padLG!important;
