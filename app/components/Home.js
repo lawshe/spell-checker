@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Intro from 'prtls/Intro.js';
+import TextInput from 'prtls/TextInput.js';
 import glob from 'style';
 /**
   *
@@ -26,6 +27,11 @@ class Home extends React.Component {
     return (
       <div>
         <Intro parallax={this.props.parallax} />
+        <div className="row">
+          <div className="col s6">
+            <TextInput />
+          </div>
+        </div>
       </div>
     )
   }
