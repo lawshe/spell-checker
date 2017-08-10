@@ -47,3 +47,7 @@ $ npm start
 - Handle new lines in <textarea> input
 - Update Jest to handle Webpack alias
 - Add clear button
+
+## Possible Updates
+- Consolidate text input/output into 1 view, perhaps using a WYSIWYG
+- Add word suggestions
