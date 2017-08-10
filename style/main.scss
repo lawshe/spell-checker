@@ -153,13 +153,14 @@ a:not(.btn){
 }
 
 .dark_bg{
-  h1{
+  h1, p{
     color: $white;
   }
 
   a:not(.btn){
+    color: $blueVeryLight;
     &:hover{
-      color: $blueVeryLight!important;
+      color: $greenLight!important;
     }
   }
 }
