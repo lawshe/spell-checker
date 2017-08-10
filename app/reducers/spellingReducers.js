@@ -1,5 +1,5 @@
 import { UPDATE_TEXT } from '../actions/actionTypes';
-import fxns from 'fxns';
+import fxns from '../../utils/fxns';
 
 const initialState = {
   input_text: '', // User input
