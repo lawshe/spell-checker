@@ -20,10 +20,6 @@ const store = createStore(
 // Google Analytics
 if (configVariables && configVariables.google_analytics && configVariables.google_analytics.property_id){
   ReactGA.initialize(configVariables.google_analytics.property_id);
-  const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-  };  
 }
 
 // Service Worker

@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 import Intro from 'prtls/Intro.js';
 import TextInput from 'prtls/TextInput.js';
 import TextOutput from 'prtls/TextOutput.js';
 import glob from 'style';
+
 /**
   *
   * Homepage
@@ -22,6 +24,8 @@ class Home extends React.Component {
 
   componentDidMount() {
     $('.collapsible').collapsible();
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
   }
 
   render() {

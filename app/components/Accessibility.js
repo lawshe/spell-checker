@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 import { toggleParallax } from '../actions/actionCreators'
 import PageHeader from 'prtls/PageHeader';
 import glob from 'style';
@@ -27,6 +28,11 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 class Accessibility extends React.Component {
+
+  componentDidMount() {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }
 
   handleParallaxClick(event) {
     this.props.onParallaxClick();
