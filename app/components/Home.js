@@ -37,7 +37,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <div className={`row container ${glob.dark_bg}`}>
+        <div className={`row container ${glob.dark_bg}`} style={{marginBottom: 0}}>
           <div className="col s6">
             <h2>Text Input</h2>
           </div>
