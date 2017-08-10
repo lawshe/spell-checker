@@ -36,12 +36,10 @@ class TextInput extends React.Component {
 
   render() {
     return (
-      <div className={glob.pad_lg}>
-        <div className="card"><div className="card-content">
-          <span className="card-title">Text Input</span>
-          <textarea className="materialize-textarea" id="textarea1" onChange={() => this.handleTextChange()}>{this.props.input_text}</textarea>
-        </div></div>
-      </div>
+      <div className="card"><div className="card-content">
+        <span className="card-title">Text Input</span>
+        <textarea className="materialize-textarea" id="textarea1" onChange={() => this.handleTextChange()}>{this.props.input_text}</textarea>
+      </div></div>
     );
   }
 }
