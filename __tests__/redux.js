@@ -9,6 +9,14 @@ describe('actions', () => {
     };
     expect(actions.toggleParallax()).toEqual(expectedAction)
   });
+  it('should create an action to update text', () => {
+    const input_text = 'A robot may not injure a human being.';
+    const expectedAction = {
+      type: types.UPDATE_TEXT,
+      input_text
+    };
+    expect(actions.updateText(input_text)).toEqual(expectedAction)
+  });
 });
 
 describe('accessibility reducer', () => {
