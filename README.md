@@ -25,7 +25,7 @@ $ npm run dev
 Go to http://localhost:8080/ in your browser.
 
 ## Testing
-Testing redux action creators and reducers using [Jest](https://facebook.github.io/jest/). Test files are in `\_\_tests_\_\`. To run tests,
+Testing redux action creators and reducers using [Jest](https://facebook.github.io/jest/). Test files are in `\__tests__`. To run tests,
 ```
 $ npm test
 ```
