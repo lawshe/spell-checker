@@ -33,4 +33,30 @@ describe('accessibility reducer', () => {
       parallax: false
     })
   });
+
+  it('word is spelled correctly', () => {
+    expect(reducer.spelling(undefined, {
+      type: types.UPDATE_TEXT,
+      input_text: "I"
+    })).toEqual({
+      input_text_arr: ["I"],
+      input_text: "I",
+      misspelled: {}
+    })
+  });
+
+  it('words not spelled correctly', () => {
+    // To Do - There is a to do to handle capitalized first words
+    expect(reducer.spelling(undefined, {
+      type: types.UPDATE_TEXT,
+      input_text: "The dog is here"
+    })).toEqual({
+      input_text_arr: ["The", "dog", "is", "here"],
+      input_text: "The dog is here",
+      misspelled: {
+        "The": [0],
+        "is": [2]
+      }
+    })
+  });
 });
