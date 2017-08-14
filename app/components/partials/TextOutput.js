@@ -24,7 +24,7 @@ class TextInput extends React.Component {
         <div>
           {this.props.TextInputArr.map((word, index) => {
             var wordClass = '';
-            if (this.props.misspelled[word.toLowerCase()]) {
+            if (this.props.misspelled[word]) {
               wordClass = glob.misspelled;
             }
             return <span key={index}><span className={wordClass}>{word}</span> </span>

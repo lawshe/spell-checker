@@ -6,7 +6,7 @@ const wordsToObj = (arr) => {
   // create an object where keys are words from input text and values are arrays, containing indices where words occur
   var wordsObj = {};
   arr.forEach((word, idx) => {
-    var w = word.toLowerCase();
+    var w = word;
     if (!wordsObj[w]) {
       wordsObj[w] = [idx];
     } else {
