@@ -33,7 +33,10 @@ describe('accessibility reducer', () => {
       parallax: false
     })
   });
+});
 
+
+describe('spelling reducer', () => {
   it('word is spelled correctly', () => {
     expect(reducer.spelling(undefined, {
       type: types.UPDATE_TEXT,
