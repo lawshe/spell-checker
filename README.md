@@ -41,7 +41,7 @@ $ npm start
 ```
 
 ## To Do
-- Handle other grammer rules: change verbs into adjectives, change verbs into nouns, change adjectives into adverbs, -un prefix, combined words
+- Handle other grammar rules: change verbs into adjectives, change verbs into nouns, change adjectives into adverbs, -un prefix, combined words
 - Add tests for components
 - Remove HTML from input
 - Handle new lines in <textarea> input
