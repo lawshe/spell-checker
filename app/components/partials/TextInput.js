@@ -27,6 +27,10 @@ const mapDispatchToProps = (dispatch) => {
 
 class TextInput extends React.Component {
 
+  componentDidMount() {
+    this.props.onTextChange('');
+  }
+
   handleTextChange() {
     const textValue = document.getElementById('textarea1').value;
     this.props.onTextChange(textValue);
