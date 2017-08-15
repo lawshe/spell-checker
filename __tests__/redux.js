@@ -57,8 +57,8 @@ describe('spelling reducer', () => {
       input_text_arr: ["The", "dog", "is", "here"],
       input_text: "The dog is here",
       misspelled: {
-        "The": [0],
-        "is": [2]
+        "The": true,
+        "is": true
       }
     })
   });

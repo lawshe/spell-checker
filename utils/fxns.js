@@ -2,18 +2,8 @@ import basic from '../constants/basic-words';
 
 const allBasicWords = basic.operations.concat(basic.things, basic.qualities);
 
-const wordsToObj = (arr) => {
-  // create an object where keys are words from input text and values are arrays, containing indices where words occur
-  var wordsObj = {};
-  arr.forEach((word, idx) => {
-    var w = word;
-    if (!wordsObj[w]) {
-      wordsObj[w] = [idx];
-    } else {
-      wordsObj[w].push(idx);
-    }
-  });
-  return wordsObj;
+const removePunctuation = (str) => {
+  return str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
 }
 
 const makeArray = (str) => {
@@ -22,21 +12,22 @@ const makeArray = (str) => {
 
 const spellCheck = (str) => {
   // Using BASIC English to spell check. Also considering plural cases on `basic.things` words
-  var misspelled = {};
+  let misspelled = {};
   if (str) {
-    var strArr = makeArray(str);
-    var wordsObj = wordsToObj(strArr);
-    // Object keys are words from user input
-    for (var word in wordsObj) {
-      word = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
-      if(allBasicWords.indexOf(word) === -1) {
-        // check if plural thing
-        if (word.slice(-1) === 's' && basic.things.indexOf(word.slice(0, -1)) !== -1) {
-        } else if (word.slice(-3) === 'ies' && basic.things.indexOf(word.slice(0, -3) + 'y') !== -1) {
-        } else if (word.slice(-2) === 'es' && basic.things.indexOf(word.slice(0, -2)) !== -1) {
-        } else{
-          // not in list and not plural
-          misspelled[word] = wordsObj[word];
+    const strArr = makeArray(str);
+    const inputSet = new Set(strArr);
+    for (var word of inputSet) {
+      let w = removePunctuation(word);
+      if (!misspelled[w]) {
+        if (allBasicWords.indexOf(w) === -1){
+          // check if plural thing
+          if (w.slice(-1) === 's' && basic.things.indexOf(w.slice(0, -1)) !== -1) {
+          } else if (w.slice(-3) === 'ies' && basic.things.indexOf(w.slice(0, -3) + 'y') !== -1) {
+          } else if (w.slice(-2) === 'es' && basic.things.indexOf(w.slice(0, -2)) !== -1) {
+          } else{
+            // not in list and not plural
+            misspelled[w] = true;
+          }
         }
       }
     }
@@ -46,5 +37,6 @@ const spellCheck = (str) => {
 
 export default {
   makeArray,
+  removePunctuation,
   spellCheck
 }

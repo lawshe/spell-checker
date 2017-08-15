@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import glob from 'style';
+import fxns from 'fxns';
 
 /**
   *
@@ -24,7 +25,7 @@ class TextInput extends React.Component {
         <div>
           {this.props.TextInputArr.map((word, index) => {
             var wordClass = '';
-            if (this.props.misspelled[word]) {
+            if (this.props.misspelled[fxns.removePunctuation(word)]) {
               wordClass = glob.misspelled;
             }
             return <span key={index}><span className={wordClass}>{word}</span> </span>
