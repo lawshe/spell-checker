@@ -49,8 +49,8 @@ $ npm start
 - Add clear button
 - Add hover to `.brand-logo`
 - Add UI message explaining that highlighted words in "Spell Checked" were not found in Basic English
-- Handle words that should be capitalized. For ex, beginning of sentence
-- Use JS sets for spell checking
+- Handle multiple sentences - Allow first word to be capitalized at start of each sentence. Currently only supporting capitalization in multiple sentences if the first word in the user input is used to start another sentence. For ex, `This is a test. This is a test.` will return only `is` as misspelled
+- Optimize - don't recheck already checked words after input change
 
 ## Possible Updates
 - Consolidate text input/output into 1 view, perhaps using a WYSIWYG
