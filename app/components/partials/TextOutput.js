@@ -16,7 +16,7 @@ const mapStateToProps = (state) => {
   }
 }
 
-class TextInput extends React.Component {
+class TextOutput extends React.Component {
 
   render() {
 
@@ -44,4 +44,4 @@ class TextInput extends React.Component {
 
 export default connect(
   mapStateToProps
-)(TextInput);
+)(TextOutput);
