@@ -48,8 +48,20 @@ describe('spelling reducer', () => {
     })
   });
 
-  it('words not spelled correctly', () => {
-    // To Do - There is a to do to handle capitalized first words
+  it('word not spelled correctly', () => {
+    expect(reducer.spelling(undefined, {
+      type: types.UPDATE_TEXT,
+      input_text: "is"
+    })).toEqual({
+      input_text_arr: ["is"],
+      input_text: "is",
+      misspelled: {
+        "is": true
+      }
+    })
+  });
+
+  it('first word can be capitalized', () => {
     expect(reducer.spelling(undefined, {
       type: types.UPDATE_TEXT,
       input_text: "The dog is here"
@@ -57,7 +69,6 @@ describe('spelling reducer', () => {
       input_text_arr: ["The", "dog", "is", "here"],
       input_text: "The dog is here",
       misspelled: {
-        "The": true,
         "is": true
       }
     })
